@@ -28,7 +28,9 @@ namespace CompanyApp{
             return totalValue;
         }
         Customer::~Customer(){
-            //empty
+            for(int i=0;i<_orders.size();i++){
+                delete _orders[i];
+            }
         }
         
 

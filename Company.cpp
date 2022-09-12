@@ -12,6 +12,18 @@ namespace CompanyApp{
     std::vector<Customer*> Company::_customers;
     std::vector<Item*> Company::_items;
 
+    Company::Company(){
+
+    }
+    Company::~Company(){
+      for(int i=0;i<_customers.size();i++){
+        delete _customers[i];
+      }
+      for(int i=0;i<_items.size();i++){
+        delete _items[i];
+      }
+    }
+
     void Company::enterCustomer()
     {
         std::string name;
