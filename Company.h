@@ -9,6 +9,8 @@ namespace CompanyApp{
         static double getTotalWorthOrders();
 
         public:
+            Company();
+            ~Company();
             double getWorthOfOrdersPlaced();
             static void enterCustomer();
             static void enterItem();
@@ -24,6 +26,7 @@ namespace CompanyApp{
 
             // Fun to print total worth of orders per customer
             static void displayTotalOrders();
+            
     };
 
 }

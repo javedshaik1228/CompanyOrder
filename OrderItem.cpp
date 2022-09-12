@@ -10,6 +10,7 @@ namespace CompanyApp{
 
     OrderItem::~OrderItem()
     {
+        delete item;
     }
 
     Item *OrderItem::getItem() const

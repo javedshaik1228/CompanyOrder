@@ -8,6 +8,8 @@ namespace CompanyApp{
         std::vector<OrderItem*> _orderedItems;     //vector of pairs, pair.first = item, pair.second  = quantity
         double _orderTotal;
         public:
+            Order();
+            ~Order();
             void addItems( OrderItem *_oItem );   
             double getOrderTotal();
     };
